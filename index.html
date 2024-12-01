@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+        <title>Phasmophobia</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:wght@100..900&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></a></li>
+                  
+                    
+                </ul>
+
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome Ghost Hunter</h1>
+            <p>This is list equipment you need to know.</p>
+            <a href="english.html" class="hero-btn">click here</a>
+        </div>
+
+    </section>
+
+    
+
+    <!-----------------JavaScript For Toggle menu------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
